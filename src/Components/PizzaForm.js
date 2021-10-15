@@ -38,7 +38,7 @@ export default function PizzaForm({
   return (
     <StyledFormContainer>
       <Form id="pizza-form">
-        <h2>Your Information</h2>
+        <h2>Build Your Own Pizza</h2>
         <h4>Required</h4>
         <FormGroup>
           <Label for="name-input">Name</Label>
@@ -142,6 +142,17 @@ export default function PizzaForm({
             checked={values.extraCheese}
           />
           Extra Cheese
+        </FormGroup>
+
+        <FormGroup>
+          <Label for="special-text">Special Instructions</Label>
+          <Input
+            onChange={onChange}
+            type="text"
+            id="special-text"
+            name="special"
+            value={values.special}
+          />
         </FormGroup>
 
         <Button

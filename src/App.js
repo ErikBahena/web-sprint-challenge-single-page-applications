@@ -6,12 +6,14 @@ import Home from "./Components/Home.js";
 import PizzaForm from "./Components/PizzaForm";
 
 import formSchema from "./formSchema.js";
+import axios from "axios";
 import * as yup from "yup";
 
 const initialFormValues = {
   name: "",
   email: "",
   size: "",
+  special: "",
   pepperoni: false,
   sausage: false,
   pineapple: false,
@@ -26,10 +28,13 @@ const initialFormErrors = {
 
 const initialDisabled = false;
 
+const initialOrders = [];
+
 const App = () => {
   const [formValues, setFormValues] = useState(initialFormValues);
   const [formErrors, setFormErrors] = useState(initialFormErrors);
   const [disabled, setDisabled] = useState(initialDisabled);
+  const [orders, setOrders] = useState(initialOrders);
 
   useEffect(() => {
     formSchema.isValid(formValues).then((valid) => setDisabled(!valid));
@@ -55,7 +60,14 @@ const App = () => {
   };
 
   const createOrder = (newOrder) => {
-    console.log(newOrder);
+    axios
+      .post(`https://reqres.in/api/orders`, newOrder)
+      .then((res) => {
+        setOrders([...orders, { [res.data.id]: res.data }]);
+      })
+      .catch((err) => console.log(err))
+      .finally(setFormValues(initialFormValues));
+    console.log(orders);
   };
 
   return (
