@@ -36,6 +36,7 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 1. In 1-2 sentences, explain what React's `useRouteMatch` hook is used for.
 1. How would you explain form validation to someone who has never programmed before?
+   Let's say you're going around a college campus. You're asking questions for a survey. You need some information from the person you're surveying, like a name, an age, and whether or not they agree to your question. For the survey to be filled out properly you need everything, which means a name, an age, and whether or not they agree to your question. If a person only gives you a name, then your survey is not valid. If a person only gives you an age and a name but not a answer to your question, then your survey is invalid. Form validation is a computer program doing the previous evaluation of a form. It will check and make sure all parts that are required are filled out, and make sure that they are acceptable answers.
 1. In 1-2 sentences, define end to end testing.
 
 ## Instructions
@@ -63,6 +64,7 @@ Your finished project must include all of the following requirements:
 - [ ] An Add to Order button that has an id of "order-button" and that submits form and returns a database record of name, size, toppings and special instructions
 
 Data should look something like
+
 ```
 {
     name: string,
@@ -72,6 +74,7 @@ Data should look something like
     special: string,
 }
 ```
+
 where there is a key for name, size and special and they are strings
 and
 there is a key for each of the toppings and they are booleans
@@ -113,4 +116,5 @@ One of your goals is to return a database record of the order - for this you'll 
 Follow these steps for completing your project.
 
 Set up your fork on Github to codegrade following the instructions [here](https://lambdaschool.instructure.com/courses/1675/assignments/51399?module_item_id=617624), pushing commits to your main branch.
+
 - [ ] Your code will be reviewed over the next few days. Read [these instructions](https://www.notion.so/How-to-View-Feedback-in-CodeGrade-c5147cee220c4044a25de28bcb6bb54a) to learn how to view feedback in CodeGrade.
