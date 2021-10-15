@@ -23,6 +23,7 @@ const StyledHomePage = styled.section`
     h1 {
       color: var(--white);
       font-size: 3rem;
+      text-shadow: 2px 4px 3px rgba(0, 0, 0, 0.2);
     }
 
     a {
@@ -45,61 +46,69 @@ const StyledHomePage = styled.section`
   }
 
   .delivery-article {
-    width: 100%;
+    width: 100vw;
     padding: 4% 3%;
     background-color: var(--white);
     height: max-content;
     color: var(--black);
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
 
     h2 {
       width: 100%;
       height: max-content;
       margin-top: 0;
-      margin-bottom: 0;
+      margin-bottom: 0.9rem;
     }
   }
 `;
 
 const initialCardData = [
   {
-    image_url: "https://unsplash.com/collections/ZBVwwGlWlh0/pizza",
+    image_url:
+      "https://cdn.winsightmedia.com/platform/files/public/2020-06/background/shutterstock_1181606473_1592329384.jpg?VersionId=MZY8yYT5e2RM7arx_lljn.LNxSM78_C9",
     title: "McDonald's",
     subtitle: "American - Fast Food - Burgers",
     wait_time: "20-30 Min",
     delivery_fee: "$5.99 Delivery Fee",
   },
   {
-    image_url: "https://unsplash.com/collections/ZBVwwGlWlh0/pizza",
+    image_url:
+      "https://cdn.winsightmedia.com/platform/files/public/2020-06/background/shutterstock_1181606473_1592329384.jpg?VersionId=MZY8yYT5e2RM7arx_lljn.LNxSM78_C9",
     title: "McDonald's",
     subtitle: "American - Fast Food - Burgers",
     wait_time: "20-30 Min",
     delivery_fee: "$5.99 Delivery Fee",
   },
   {
-    image_url: "https://unsplash.com/collections/ZBVwwGlWlh0/pizza",
+    image_url:
+      "https://cdn.winsightmedia.com/platform/files/public/2020-06/background/shutterstock_1181606473_1592329384.jpg?VersionId=MZY8yYT5e2RM7arx_lljn.LNxSM78_C9",
     title: "McDonald's",
     subtitle: "American - Fast Food - Burgers",
     wait_time: "20-30 Min",
     delivery_fee: "$5.99 Delivery Fee",
   },
   {
-    image_url: "https://unsplash.com/collections/ZBVwwGlWlh0/pizza",
+    image_url:
+      "https://cdn.winsightmedia.com/platform/files/public/2020-06/background/shutterstock_1181606473_1592329384.jpg?VersionId=MZY8yYT5e2RM7arx_lljn.LNxSM78_C9",
     title: "McDonald's",
     subtitle: "American - Fast Food - Burgers",
     wait_time: "20-30 Min",
     delivery_fee: "$5.99 Delivery Fee",
   },
   {
-    image_url: "https://unsplash.com/collections/ZBVwwGlWlh0/pizza",
+    image_url:
+      "https://cdn.winsightmedia.com/platform/files/public/2020-06/background/shutterstock_1181606473_1592329384.jpg?VersionId=MZY8yYT5e2RM7arx_lljn.LNxSM78_C9",
     title: "McDonald's",
     subtitle: "American - Fast Food - Burgers",
     wait_time: "20-30 Min",
     delivery_fee: "$5.99 Delivery Fee",
   },
   {
-    image_url: "https://unsplash.com/collections/ZBVwwGlWlh0/pizza",
+    image_url:
+      "https://cdn.winsightmedia.com/platform/files/public/2020-06/background/shutterstock_1181606473_1592329384.jpg?VersionId=MZY8yYT5e2RM7arx_lljn.LNxSM78_C9",
     title: "McDonald's",
     subtitle: "American - Fast Food - Burgers",
     wait_time: "20-30 Min",
