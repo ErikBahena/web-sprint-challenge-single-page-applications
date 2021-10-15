@@ -4,6 +4,7 @@
   --white: #ffffff;
   --background-color: #cecece;
   --gray: #5e5e5e;
+  --btn-border-radius: 0.2rem;
 }
 /* Utility Classes for fonts */
 h1 {
@@ -39,4 +40,8 @@ body {
   padding: 0;
   background-color: var(--background-color);
   font-family: "Spartan", sans-serif;
+}
+
+.banner-container {
+  background-image: url("./Assets/Pizza.jpg");
 }

@@ -26,9 +26,10 @@ const StyledNavBar = styled.nav`
     padding: 0 1.3rem;
     display: flex;
     align-items: center;
+    border-radius: 0.2rem;
 
     a {
-      color: white;
+      color: var(--white);
       font-weight: 700;
       font-size: 1rem;
       line-height: 1.5rem;
@@ -52,6 +53,7 @@ export default function NavBar() {
       <h2>Lambda Eats</h2>
       <div className="nav-links-container">
         <NavLink
+          exact
           to="/"
           activeStyle={{
             color: "var(--accent-color)",
@@ -62,6 +64,7 @@ export default function NavBar() {
 
         <div className="middle-divider"></div>
         <NavLink
+          id="order-pizza"
           to="/pizza"
           activeStyle={{
             color: "var(--accent-color)",
