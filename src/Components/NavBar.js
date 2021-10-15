@@ -26,7 +26,7 @@ const StyledNavBar = styled.nav`
     padding: 0 1.3rem;
     display: flex;
     align-items: center;
-    border-radius: 0.2rem;
+    border-radius: var(--btn-border-radius);
 
     a {
       color: var(--white);

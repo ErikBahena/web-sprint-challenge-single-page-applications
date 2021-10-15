@@ -4,6 +4,7 @@
   --white: #ffffff;
   --background-color: #cecece;
   --gray: #5e5e5e;
+  --light-gray: rgb(119, 119, 119) e;
   --btn-border-radius: 0.2rem;
 }
 /* Utility Classes for fonts */
