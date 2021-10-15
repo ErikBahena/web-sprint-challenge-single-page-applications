@@ -37,7 +37,7 @@ const StyledCard = styled.div`
       display: inline-block;
       padding: 0.4rem 0.6rem;
       height: max-content;
-    
+
       color: var(--black);
       font-weight: 625;
       font-size: 1rem;
@@ -54,19 +54,14 @@ const DeliveryCards = ({ cards }) => {
         return (
           <StyledCard key={nanoid(5)}>
             <Card className="card">
-              <CardImg
-                top
-                width="100%"
-                src={card.image_url}
-                alt="pizza"
-              />
+              <CardImg top width="100%" src={card.image_url} alt="pizza" />
               <CardBody>
                 <CardTitle tag="h3">{card.title}</CardTitle>
                 <CardSubtitle tag="h4" className="mb-2 text-muted">
                   {card.subtitle}
                 </CardSubtitle>
-                <a>{card.wait_time}</a>
-                <a>{card.delivery_fee}</a>
+                <a href="/">{card.wait_time}</a>
+                <a href="/">{card.delivery_fee}</a>
               </CardBody>
             </Card>
           </StyledCard>
